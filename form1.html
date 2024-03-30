@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="form.css" />
+    <title>Document</title>
+
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .flex {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <div>
+        <h3>Əlaqədar Şəxs Məlumatı</h3>
+
+        <div class="contact-info">
+          <div class="labels">
+            <p>​Tam adı:</p>
+            <p>İstifadəçi adı:</p>
+            <p>Şifrəsi:</p>
+            <p>Vəzifəsi:</p>
+            <p>E-poçt ünvanı:</p>
+            <p>Telefon nömrəsi:</p>
+            <p>Mobil Nömrə:</p>
+            <p>Faks Nömrəsi:</p>
+            <p>E-poçt ünvanı:</p>
+            <p>​Veb sayt:</p>
+          </div>
+
+          <div class="contact-input">
+            <input type="text" name="" />
+            <input type="text" name="" />
+            <input type="password" name="" />
+            <input type="text" name="" />
+            <input type="email" name="" />
+            <input type="number" name="" />
+            <input type="number" name="" />
+            <input type="number" name="" />
+            <input type="email" name="" />
+            <input type="text" name="" />
+          </div>
+        </div>
+
+        <div>
+          <div class="same-person-checkbox">
+            <p>Direktorla eyni şəxsdir</p>
+            <input type="checkbox" id="samePersonCheckbox" class="checkbox"/>
+          </div>
+
+          <div class="director-info" id="directorInfo">
+            <div class="labels">
+              <p>​Tam adı:</p>
+              <p>İstifadəçi adı:</p>
+              <p>Şifrəsi:</p>
+              <p>Doğum tarixi:</p>
+              <p>Vətəndaşlıq:</p>
+              <p>Yaşayış ünvanı:</p>
+              <p>Vəzifə:</p>
+              <p>Təyin olma tarixi:</p>
+              <p>Telefon nömrəsi:</p>
+              <p>E-poçt ünvanı:</p>
+            </div>
+
+            <div class="director-input">
+              <input type="text" name="" />
+              <input type="text" name="" />
+              <input type="password" name="" />
+              <input type="date" name="" />
+              <input type="text" name="" />
+              <input type="text" name="" />
+              <input type="text" name="" />
+              <input type="date" name="" />
+              <input type="number" name="" />
+              <input type="email" name="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Şirkət Kapitalı</h3>
+        <div class="company-capital">
+          <div class="company-partners">
+            <div class="labels">
+              <p>​Tam adı:</p>
+              <p>İstifadəçi adı:</p>
+              <p>Şifrəsi:</p>
+              <p>Doğum tarixi:</p>
+              <p>Vətəndaşlıq:</p>
+              <p>Yaşayış ünvanı:</p>
+              <p>Vəzifə:</p>
+            </div>
+
+            <div class="partner-input">
+              <input type="text" name="" />
+              <input type="text" name="" />
+              <input type="password" name="" />
+              <input type="date" name="" />
+              <input type="text" name="" />
+              <input type="text" name="" />
+              <input type="text" name="" />
+            </div>
+          </div>
+        </div>
+        <button id="duplicateForm">Ortaq əlavə et</button>
+        <button id="removeForm">Ortağı sil</button>
+
+        <h3>Səhmdar haqqında məlumat</h3>
+        <div class="stockholder-forms">
+          <div class="stockholder-info">
+            <div class="labels">
+              <p>​Tam adı:</p>
+              <p>Vəzifə:</p>
+              <p>Telefon nömrəsi:</p>
+              <p>E-poçt ünvanı:</p>
+              <p>Səhmlərin sayı:</p>
+              <p>​Səhmlərin növü:</p>
+              <p>​Səhmlərin Alınma tarixi:</p>
+              <p>Pay Sertifikatının Nömrəsi:</p>
+            </div>
+
+            <div class="stockholder-input">
+              <input type="text" name="fullName" />
+              <input type="text" name="position" />
+              <input type="tel" name="phoneNumber" />
+              <input type="email" name="email" />
+              <input type="number" name="shareCount" />
+              <input type="text" name="shareType" />
+              <input type="date" name="shareDate" />
+              <input type="number" name="certificateNumber" />
+            </div>
+          </div>
+        </div>
+
+        <button class="duplicateStockholder">Səhmdar əlavə et</button>
+        <button class="removeStockholder">Səhmdar sil</button>
+      </div>
+    </div>
+
+    <script src="/App.js"></script>
+  </body>
+</html>

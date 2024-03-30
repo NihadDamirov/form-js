@@ -1,0 +1,204 @@
+* {
+  font-family: Inter;
+}
+
+p {
+  font-weight: 700;
+}
+
+#form {
+  display: flex;
+  width: auto;
+  /* width: 1200px; */
+  margin-top: 15px !important;
+}
+
+.company-info input {
+  display: flex;
+  margin-bottom: 28px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 216px;
+}
+
+.company-info {
+  display: flex;
+  gap: 55px;
+  margin-bottom: 25px;
+}
+
+.labels {
+  display: block;
+}
+
+h3 {
+  padding: 0;
+  margin-bottom: 15px;
+  margin-top: 0 !important;
+}
+
+#form {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 150px;
+}
+
+.same-person-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.labels > p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.contact-info {
+  display: flex;
+  gap: 70px;
+}
+
+.contact-input > input,
+.director-input > input,
+.partner-input > input,
+.stockholder-input > input,
+.bank-input > input {
+  display: flex;
+  margin-bottom: 28px;
+  width: 216px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.director-info {
+  display: flex;
+  gap: 60px;
+}
+
+.company-partners {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 25px;
+}
+
+.stockholder-info {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.bank-account-details {
+  display: flex;
+  gap: 60px;
+}
+
+.company-capital {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount-input {
+  width: 216px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 7px;
+}
+
+.select-section {
+  width: fit-content;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.select-section:focus {
+  border: none;
+  outline: none;
+}
+
+.add-user,
+#duplicateForm,
+#removeForm,
+.duplicateStockholder,
+.removeStockholder {
+  margin: 10px;
+  background-color: #094c89;
+  border: none;
+  color: white;
+  padding: 9px 15px 9px 15px;
+  border-radius: 32px;
+  margin-left: -1px !important;
+  margin-bottom: 25px;
+}
+
+.add-partner {
+  margin-top: -25px !important;
+  margin-bottom: 55px !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+input[type="date"] {
+  color: transparent;
+}
+.remove-btn {
+  background-color: #094c89;
+  border: none;
+  color: white;
+  width: 78px;
+  height: 33px;
+  border-radius: 32px;
+  margin-left: 15px;
+}
+
+.test-btn {
+  border: 1px solid black;
+  border-radius: 32px;
+  width: 78px;
+  height: 32px;
+  background-color: transparent;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Form2 */
+
+.company-info input {
+  display: flex;
+  margin-bottom: 28px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 216px;
+}
+
+.company-info {
+  display: flex;
+  gap: 55px;
+  margin-bottom: 25px;
+}
+
+.bank-input > input {
+  display: flex;
+  margin-bottom: 28px;
+  width: 216px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.bank-account-details {
+  display: flex;
+  gap: 60px;
+}
