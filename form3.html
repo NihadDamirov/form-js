@@ -18,88 +18,41 @@
     </style>
   </head>
   <body>
-    <div id="form">
+    <div id="form" style="display: flex; flex-direction: column; gap: 0px">
       <div>
-        <div id="inputsContainer" style="margin: 0 !important"></div>
-        <button class="add-user" onclick="addInput()">
-          İstifadəçi əlavə et
-        </button>
+        <div>
+          <div id="inputsContainer" style="margin: 0 !important"></div>
+          <select class="select-section">
+            <option value="">user1</option>
+            <option value="">user2</option>
+            <option value="">user3</option>
+          </select>
+          <input type="text" class="amount-input" />
+          <button class="add-user" onclick="addInput()">
+            İstifadəçi əlavə et
+          </button>
+        </div>
       </div>
     </div>
 
-    <!-- JavaScript -->
+    
     <script>
-      let inputs = [{ type: "user1", value: "" }];
-
-      function renderInputs() {
-        const container = document.getElementById("inputsContainer");
-        container.innerHTML = "";
-        inputs.forEach((input, index) => {
-          const div = document.createElement("div");
-          div.className = "company-capital-inside";
-
-          const select = document.createElement("select");
-          select.className = "select-section";
-          select.value = input.type;
-          select.addEventListener("change", (e) =>
-            handleSelectChange(e.target.value, index)
-          );
-          ["user1", "user2", "user3"].forEach((optionValue) => {
-            const option = document.createElement("option");
-            option.value = optionValue;
-            option.text = optionValue;
-            select.appendChild(option);
-          });
-
-          const numberInput = document.createElement("input");
-          numberInput.type = "number";
-          numberInput.className = "amount-input";
-          numberInput.value = input.value;
-          numberInput.addEventListener("input", (e) =>
-            handleChange(e.target.value, index)
-          );
-
-          const button = document.createElement("button");
-          button.textContent = "Direktor";
-          button.className = "test-btn";
-
-          const removeButton = document.createElement("button");
-          removeButton.textContent = "Sil";
-          removeButton.className = "remove-btn";
-          removeButton.addEventListener("click", () =>
-            handleRemoveInput(index)
-          );
-
-          div.appendChild(select);
-          div.appendChild(numberInput);
-          div.appendChild(button);
-          if (index >= 1) {
-            div.appendChild(removeButton);
-          }
-
-          container.appendChild(div);
-        });
-      }
-
       function addInput() {
-        inputs.push({ type: "user1", value: "" });
-        renderInputs();
+          const container = document.querySelector('#form > div > div');
+          const clonedDiv = container.cloneNode(true);
+  
+          container.parentNode.appendChild(clonedDiv);
+  
+          const removeButton = document.createElement('button');
+          removeButton.textContent = 'Sil';
+          removeButton.classList.add("user-remove-btn")
+          removeButton.onclick = function () {
+              this.parentNode.remove();
+          };
+          clonedDiv.appendChild(removeButton);
+  
+          clonedDiv.querySelector('input[type="text"]').value = '';
       }
-
-      function handleSelectChange(value, index) {
-        inputs[index].type = value;
-      }
-
-      function handleChange(value, index) {
-        inputs[index].value = value;
-      }
-
-      function handleRemoveInput(index) {
-        inputs.splice(index, 1);
-        renderInputs();
-      }
-
-      renderInputs();
-    </script>
+  </script>
   </body>
 </html>
